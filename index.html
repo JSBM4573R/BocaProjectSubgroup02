@@ -1,259 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subgroup02</title>
+  <title>IME - Instituto de Matemática y Estadística</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/main/home.css">
-  <link rel="stylesheet" href="./assets/css/main/academic.css">
-  <link rel="stylesheet" href="./assets/css/main/admissions.css">
-  <link rel="stylesheet" href="./assets/css/main/about.css">
-  <link rel="stylesheet" href="./assets/css/main/location.css">
-  <link rel="stylesheet" href="./assets/css/main/graduations.css">
-  <link rel="stylesheet" href="./assets/css/main/testimonials.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
 <body>
-
   <header class="header">
-    <div class="header__content">
+    <div class="container header__content">
       <div class="logo">
-        <a href="./index.html"><img class="logo__img" src="./assets/img/logo.PNG" alt="logo IME"></a>
+        <a href="#home"><img class="logo__img" src="./assets/img/logo.png" alt="logo IME"></a>
       </div>
-      <div class="menu__background"></div>
       <nav class="menu">
         <ul class="menu__list">
-            <li class="menu__item"> <a href="#home" class="menu__link">Inicio</a> </li>
-            <li class="menu__item"> <a href="#about" class="menu__link">Instituto</a> </li>
-            <li class="menu__item"> <a href="#academic" class="menu__link">Oferta Academica</a> </li>
-            <li class="menu__item"> <a href="#admissions" class="menu__link">Admisiones</a> </li>
-            <li class="menu__item"> <a href="#graduations" class="menu__link">Graduaciones</a> </li>
-            <li class="menu__item"> 
-                <select id="language" class="menu__link menu__link--language">
-                    <option value="spanish">Idioma</option>
-                    <option value="spanish">Español</option>
-                    <option value="snglish">Ingles</option>
-                    <option value="portuguese">Portugués</option>
-                </select>
-            </li>
-          <li class="menu__item"><button type="submit" class="menu__item menu__item--login">Ingresar</button> </li>
+          <li class="menu__item"> <a href="#home" class="menu__link">Inicio</a> </li>
+          <li class="menu__item"> <a href="#about" class="menu__link">Instituto</a> </li>
+          <li class="menu__item"> <a href="#academic" class="menu__link">Oferta Académica</a> </li>
+          <li class="menu__item"> <a href="#admissions" class="menu__link">Admisiones</a> </li>
+          <li class="menu__item"> <a href="#graduations" class="menu__link">Graduaciones</a> </li>
+          <li class="menu__item"> 
+            <select id="language" class="menu__link menu__link--language">
+              <option value="spanish">Idioma</option>
+              <option value="spanish">Español</option>
+              <option value="snglish">Ingles</option>
+              <option value="portuguese">Portugués</option>
+            </select>
+          </li>
+          <li class="menu__item"><button type="submit" class="menu__item--login">Ingresar</button> </li>
         </ul>
       </nav>
-    </div>
-    <div class="hamburger">
-      <span class="line1"></span>
-      <span class="line2"></span>
-      <span class="line3"></span>
+      <div class="hamburger">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
     </div>
   </header>
 
   <main class="main">
-
     <section class="home" id="home">
-      <div class="presentation">
+      <div class="container presentation">
         <h1 class="presentation__tittle">Desarrolla tu potencial</h1>
         <p class="presentation__description">
           En nuestro instituto, te ofrecemos una amplia variedad de programas y recursos para que explores y te desarrolles en el apasionante campo de las matemáticas y la estadística.
-          </p>
-        <a class="presentation__button" href="#academic" rel="noopener noreferrer">Explora</a>
+        </p>
+        <div class="presentation__buttons">
+          <a class="presentation__button" href="#academic" rel="noopener noreferrer">Explora</a>
+          <a class="presentation__button" href="#contact" rel="noopener noreferrer">Contáctanos</a>
+        </div>
       </div>
     </section>
 
-    <section class="academic" id="academic">
-        <h1 class="offers__tittle">
-          Oferta Académica
-        </h1>
+    <section class="section academic" id="academic">
+      <div class="container">
+        <h1 class="section-title">Oferta Académica</h1>
         <div class="offers__content">
           <div class="offer">
-            <img class="offer__img" loading="lazy" src="./assets/img/offers/matematica.PNG" alt="">
+            <img class="offer__img" loading="lazy" src="./assets/img/offers/matematica.jpg" alt="Matemáticas">
             <div class="offer__description">
               <h3 class="offer__tittle">Matemática</h3>
-              <p class="offer__description">Explora el mundo de las matemáticas y domina el lenguaje de los números, ecuaciones y estructuras abstractas, preparándote para enfrentar todos los desafíos.</p>
+              <p>Explora el mundo de las matemáticas y domina el lenguaje de los números, ecuaciones y estructuras abstractas, preparándote para enfrentar todos los desafíos.</p>
             </div>
           </div>
           <div class="offer">
-              <img class="offer__img" loading="lazy" src="./assets/img/offers/estadistica.PNG" alt="">
-              <div class="offer__description">
-                <h3 class="offer__tittle">Estadistica</h3>
-                <p class="offer__description">Aprende a interpretar y analizar datos para tomar decisiones informadas en áreas como salud, marketing y más, transformando grandes volúmenes de información en soluciones valiosas.</p>
-              </div>
+            <img class="offer__img" loading="lazy" src="./assets/img/offers/estadistica.jpg" alt="Estadística">
+            <div class="offer__description">
+              <h3 class="offer__tittle">Estadistica</h3>
+              <p>Aprende a interpretar y analizar datos para tomar decisiones informadas en áreas como salud, marketing y más, transformando grandes volúmenes de información en soluciones valiosas.</p>
+            </div>
           </div>
           <div class="offer">
-              <img class="offer__img" loading="lazy" src="./assets/img/offers/data_science.PNG" alt="">
-              <div class="offer__description">
-                <h3 class="offer__tittle">Data Science</h3>
-                <p class="offer__description">Conviértete en experto en analizar y manejar grandes datos, aplicando matemáticas, estadísticas y programación para generar soluciones innovadoras en diversos sectores.</p>
-              </div>
+            <img class="offer__img" loading="lazy" src="./assets/img/offers/data_science.jpg" alt="Data Science">
+            <div class="offer__description">
+              <h3 class="offer__tittle">Data Science</h3>
+              <p>Conviértete en experto en analizar y manejar grandes datos, aplicando matemáticas, estadísticas y programación para generar soluciones innovadoras en diversos sectores.</p>
+            </div>
           </div>
         </div>
+      </div>
     </section>
 
-    <section class="admissions" id="admissions">
-      <h2 class="admissions__tittle">¡ Matriculas abiertas no pierdas esta oportunidad !</h2>
-      <div class="admissions__content">
-        <div class="information">
-            <form class="information__form">
-                <div class="information__form-group">
-                  <select id="pregrado" class="information__input">
-                    <option value="">Pregrado</option>
-                    <option value="matematicas">Matemáticas</option>
-                    <option value="estadistica">Estadística</option>
-                    <option value="computacion">Data Science</option>
-                  </select>
-                </div>
-                <div class="information__form-group">
-                  <input type="email" id="correo" class="information__input" placeholder="tu_correo@ejemplo.com" required
-                  />
-                </div>
-                <div class="information__form-group">
-                  <button type="submit" class="information__button">Solicitar información</button>
-                </div>
-            </form>
+    <section class="section admissions" id="admissions">
+      <div class="container">
+        <h2 class="admissions__tittle">¡ Matriculas abiertas no pierdas esta oportunidad !</h2>
+        <div class="admissions__content">
+          <form class="information__form">
+            <div class="information__form-group">
+              <select id="pregrado" class="information__input">
+                <option value="">Pregrado</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="estadistica">Estadística</option>
+                <option value="computacion">Data Science</option>
+              </select>
+            </div>
+            <div class="information__form-group">
+              <input type="email" id="correo" class="information__input" placeholder="tu_correo@ejemplo.com" required />
+            </div>
+            <div class="information__form-group">
+              <button type="submit" class="information__button">Solicitar información</button>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="us">
-          <h1 class="us__tittle">Acerca de nosotros</h1>
-          <img class="us__img" loading="lazy" src="./assets/img/about/instituto.PNG" alt="">
-          <p class="us__description">
-            El Instituto de Matemática y Estadística (IME) de la Universidad de São Paulo (USP) es uno de los centros académicos más destacados de Brasil en las áreas de matemáticas puras y aplicadas, así como en estadística. Fundado en 1969, el IME se dedica a la enseñanza, investigación y extensión en diversos campos de las matemáticas, con un enfoque en la formación de profesionales altamente capacitados.
-
-            El instituto ofrece programas de pregrado, posgrado y formación continua, destacándose por su calidad académica, investigaciones innovadoras y su infraestructura moderna. Además, el IME está involucrado en la promoción de investigaciones avanzadas en diversas áreas, como álgebra, análisis, geometría, matemáticas aplicadas, estadística y ciencia de datos.
-
-            Con un enfoque en la excelencia, el IME es reconocido tanto a nivel nacional como internacional, siendo un referente en la formación de matemáticos y estadísticos, además de contribuir significativamente al avance del conocimiento en estas disciplinas.
-            </p>
-        </div>
+    <section class="section about" id="about">
+      <div class="container us">
+        <h1 class="section-title">Acerca de nosotros</h1>
+        <img class="us__img" loading="lazy" src="./assets/img/about/instituto.jpg" alt="Instituto IME">
+        <p class="us__description">
+          El Instituto de Matemática y Estadística (IME) de la Universidad de São Paulo (USP) es uno de los centros académicos más destacados de Brasil en las áreas de matemáticas puras y aplicadas, así como en estadística. Fundado en 1969, el IME se dedica a la enseñanza, investigación y extensión en diversos campos de las matemáticas, con un enfoque en la formación de profesionales altamente capacitados.
+          <br><br>
+          El instituto ofrece programas de pregrado, posgrado y formación continua, destacándose por su calidad académica, investigaciones innovadoras y su infraestructura moderna. Además, el IME está involucrado en la promoción de investigaciones avanzadas en diversas áreas, como álgebra, análisis, geometría, matemáticas aplicadas, estadística y ciencia de datos.
+          <br><br>
+          Con un enfoque en la excelencia, el IME es reconocido tanto a nivel nacional como internacional, siendo un referente en la formación de matemáticos y estadísticos, además de contribuir significativamente al avance del conocimiento en estas disciplinas.
+        </p>
+      </div>
     </section>
 
-    <section class="location" id="location">
-        <h1 class="location__tittle">Localización</h1>
+    <section class="section location" id="location">
+      <div class="container">
+        <h1 class="section-title">Localización</h1>
         <div class="places">
-            <div class="place">
-                <img class="place__img" loading="lazy" src="./assets/img/location/location_one.PNG" alt="">
-                <div class="place__description">
-                  <h3 class="place__tittle">Centro de Sao Pablo</h3>
-                  <p class="place__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequuntur deserunt eveniet sunt facere fuga, vero aut accusantium pariatur ipsa, quo delectus rerum illum laboriosam ratione eius officiis natus ipsum?</p>
-                </div>
+          <div class="place">
+            <img class="place__img" loading="lazy" src="/assets/img/Imagen_SaoPablo.png"Centro de São Paulo">
+            <div class="place__description">
+              <h3 class="place__tittle">Centro de Sao Pablo</h3>
+              <p>
+                El Instituto de Matemática y Estadística (IME) de la Universidad de São Paulo (USP) es uno de los centros académicos más destacados de Brasil en las áreas de matemáticas puras y aplicadas, así como en estadística. Fundado en 1969, el IME se dedica a la enseñanza, investigación y extensión en diversos campos de las matemáticas, con un enfoque en la formación de profesionales altamente capacitados.
+              </p>
             </div>
-            <div class="place">
-                <div class="place__description">
-                  <h3 class="place__tittle">Centro de Estados Unidos</h3>
-                  <p class="place__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequuntur deserunt eveniet sunt facere fuga, vero aut accusantium pariatur ipsa, quo delectus rerum illum laboriosam ratione eius officiis natus ipsum?</p>
-                </div>
-                <img class="place__img" loading="lazy" src="./assets/img/location/location_two.PNG" alt="">
+          </div>
+          <div class="place">
+            <div class="place__description">
+              <h3 class="place__tittle">Centro de Estados Unidos</h3>
+              <p>
+                Nuestro centro en Estados Unidos ofrece programas de intercambio y colaboración con las principales instituciones educativas del país. Con instalaciones modernas y un equipo docente de primer nivel, este centro es el puente entre América Latina y Norteamérica en el campo de las matemáticas y estadística.
+              </p>
             </div>
+            <img class="place__img" loading="lazy" src="/assets/img/Imagen_SaoPablo2.png" alt="Centro de Estados Unidos">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="graduations" id="graduations">
-        <div class="graduations__content">
-            <h2 class="graduations__tittle">Inscribete a la proxima temporada de grados</h2>
-            <button type="submit" class="graduations__button">Inscribete</button>
-        </div>
+      <div class="container graduations__content">
+        <h2 class="graduations__tittle">Inscribete a la proxima temporada de grados</h2>
+        <button type="submit" class="graduations__button">Explora</button>
+      </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-        <h1 class="testimonials__tittle">
-            Testimonios de nuestros egresados
-        </h1>
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <h1 class="section-title">Testimonios de nuestros egresados</h1>
+        <p class="testimonials__intro">
+          Nuestros egresados son el reflejo del éxito y la excelencia académica que cultivamos en nuestra universidad. 
+          Con una sólida formación en matemáticas y estadística, han logrado destacarse en diversas industrias, 
+          enfrentando retos complejos y contribuyendo a la innovación en sus campos. Descubre las historias de 
+          algunos de nuestros graduados, quienes comparten cómo su educación ha impactado su carrera y les ha 
+          permitido liderar en el mundo profesional.
+        </p>
         <div class="testimonials__content">
           <div class="testimony">
-            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/olivia.PNG" alt="">
+            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/olivia.jpg" alt="Olivia Torres">
             <div class="testimony__content">
               <h3 class="testimony__tittle">Olivia Torres</h3>
-              <p class="testimony__description">“Formación excelente y exigente.”</p>
+              <p class="testimony__description">"Formación excelente y exigente."</p>
             </div>
           </div>
           <div class="testimony">
-            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/alfredo.PNG" alt="">
+            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/alfredo.jpg" alt="Alfredo Vargas">
             <div class="testimony__content">
               <h3 class="testimony__tittle">Alfredo Vargas</h3>
-              <p class="testimony__description">“Gran impacto en mi carrera.”</p>
+              <p class="testimony__description">"Gran impacto en mi carrera."</p>
             </div>
           </div>
           <div class="testimony">
-            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/lana.PNG" alt="">
+            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/lana.jpg" alt="Lana Sanchez">
             <div class="testimony__content">
               <h3 class="testimony__tittle">Lana Sanchez</h3>
               <p class="testimony__description">"Profesores altamente calificados."</p>
             </div>
           </div>
           <div class="testimony">
-            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/luisa.PNG" alt="">
+            <img class="testimony__img" loading="lazy" src="./assets/img/testimonials/luisa.jpg" alt="Luisa Perez">
             <div class="testimony__content">
               <h3 class="testimony__tittle">Luisa Perez</h3>
               <p class="testimony__description">"Ambiente académico inspirador."</p>
             </div>
           </div>
         </div>
+      </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="footer__content">
-        <div class="links">
-            <div class="link">
-                <h4 class="link__tittle">
-                    Centros
-                </h4>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">CAEN<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">CCSL<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">CEA<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">IME NUMEC<i></i></a>
-            </div>
-            <div class="link">
-                <h4 class="link__tittle">
-                    Biblioteca
-                </h4>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Adquiciciones<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Referencias<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Procesos técnicos<i></i></a>
-            </div>
-            <div class="link">
-                <h4 class="link__tittle">
-                    Servicios
-                </h4>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Reserva de laboratorios<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Audiovisuales<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Soporte Técnico<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Servicios generales<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Otros<i></i></a>
-            </div>
-            <div class="link">
-                <h4 class="link__tittle">
-                    Contacto
-                </h4>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Consejo de administracion<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Departamentos<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Area academica<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Area administrativa<i></i></a>
-                <a href="https://github.com/JSBM4573R" target="_blank" rel="noopener noreferrer" class="link link--span">Apoyo institucional<i></i></a>
-            </div>
-          </div>
-        <div class="socials">
-            <h4 class="link__tittle">
-                Siguenos
-            </h4>
-            <a href="https://github.com/JSBM4573R" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+  <footer class="footer" id="contact">
+    <div class="container footer__content">
+      <div class="links">
+        <div class="link">
+          <h4 class="link__tittle">Centros</h4>
+          <a href="#" class="link--span">CAEN</a>
+          <a href="#" class="link--span">CCSL</a>
+          <a href="#" class="link--span">CEA</a>
+          <a href="#" class="link--span">IME NUMEC</a>
         </div>
+        <div class="link">
+          <h4 class="link__tittle">Biblioteca</h4>
+          <a href="#" class="link--span">Adquiciciones</a>
+          <a href="#" class="link--span">Referencias</a>
+          <a href="#" class="link--span">Procesos técnicos</a>
+        </div>
+        <div class="link">
+          <h4 class="link__tittle">Servicios</h4>
+          <a href="#" class="link--span">Reserva de laboratorios</a>
+          <a href="#" class="link--span">Audiovisuales</a>
+          <a href="#" class="link--span">Soporte Técnico</a>
+          <a href="#" class="link--span">Servicios generales</a>
+          <a href="#" class="link--span">Otros</a>
+        </div>
+        <div class="link">
+          <h4 class="link__tittle">Contacto</h4>
+          <a href="#" class="link--span">Consejo de administracion</a>
+          <a href="#" class="link--span">Departamentos</a>
+          <a href="#" class="link--span">Area academica</a>
+          <a href="#" class="link--span">Area administrativa</a>
+          <a href="#" class="link--span">Apoyo institucional</a>
+        </div>
+      </div>
+      <div class="socials">
+        <h4 class="link__tittle">Siguenos</h4>
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
     <div class="footer__bottom">
-      <p> © <span> Politecnico Grancolombiano - Front End - Subgrupo 02 | </span> <script>document.write(new Date().getFullYear())</script></p>
+      <p> © <span>Politecnico Grancolombiano - Front End - Subgrupo 02 | </span> <script>document.write(new Date().getFullYear())</script></p>
     </div>
   </footer>
 
-  <script type="text/javascript" src="./assets/js/header.js"></script>
+  <script src="./assets/js/header.js"></script>
 </body>
-
 </html>

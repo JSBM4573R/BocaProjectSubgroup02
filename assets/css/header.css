@@ -1,0 +1,126 @@
+/* assets/css/header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo__img {
+  height: 50px;
+  width: auto;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__item {
+  margin-left: 30px;
+  position: relative;
+}
+
+.menu__link {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.menu__link:hover {
+  color: var(--hover-blue)
+}
+
+.menu__link--language {
+  border: none;
+  background: none;
+  font-family: var(--font-main);
+  color: var(--dark-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu__item--login {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu__item--login:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-color);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 992px) {
+  .menu {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 80%;
+    height: calc(100vh - 80px);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: all 0.5s ease;
+  }
+  
+  .menu.active {
+    right: 0;
+  }
+  
+  .menu__list {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menu__item {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}

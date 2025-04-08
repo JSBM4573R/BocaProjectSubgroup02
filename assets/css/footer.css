@@ -1,0 +1,85 @@
+/* assets/css/footer.css */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 60px 0 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.link {
+  flex: 1;
+  min-width: 200px;
+}
+
+.link__tittle {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.link__tittle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.link--span {
+  display: block;
+  color: #bbb;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.link--span:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.socials {
+  flex: 1;
+  min-width: 200px;
+}
+
+.socials a {
+  display: inline-block;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer__bottom span {
+  color: var(--secondary-color);
+}
