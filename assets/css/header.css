@@ -61,7 +61,7 @@
 }
 
 .menu__item--login:hover {
-  background-color: var(--accent-color);
+  background-color: var(--hover-blue);
   color: white;
 }
 

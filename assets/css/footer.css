@@ -1,6 +1,6 @@
 /* assets/css/footer.css */
 .footer {
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 60px 0 0;
 }
@@ -39,7 +39,7 @@
   bottom: 0;
   width: 40px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: #bbb;
 }
 
 .link--span {
@@ -68,7 +68,7 @@
 }
 
 .socials a:hover {
-  color: var(--secondary-color);
+  color: var(--hover-blue);
   transform: translateY(-3px);
 }
 
@@ -82,4 +82,7 @@
 
 .footer__bottom span {
   color: var(--secondary-color);
+}
+.footer__bottom p span{
+  color: #bbb;
 }
