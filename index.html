@@ -54,7 +54,6 @@
         </p>
         <div class="presentation__buttons">
           <a class="presentation__button" href="#academic" rel="noopener noreferrer">Explora</a>
-          <a class="presentation__button" href="#contact" rel="noopener noreferrer">Contáctanos</a>
         </div>
       </div>
     </section>
@@ -92,17 +91,19 @@
       <div class="container">
         <h2 class="admissions__tittle">¡ Matriculas abiertas no pierdas esta oportunidad !</h2>
         <div class="admissions__content">
-          <form class="information__form">
+          <form class="information__form" id="informationForm" novalidate>
             <div class="information__form-group">
-              <select id="pregrado" class="information__input">
+              <select id="pregrado" class="information__input" required>
                 <option value="">Pregrado</option>
                 <option value="matematicas">Matemáticas</option>
                 <option value="estadistica">Estadística</option>
                 <option value="computacion">Data Science</option>
               </select>
+              <div class="error-message" id="pregradoError"></div>
             </div>
             <div class="information__form-group">
               <input type="email" id="correo" class="information__input" placeholder="tu_correo@ejemplo.com" required />
+              <div class="error-message" id="correoError"></div>
             </div>
             <div class="information__form-group">
               <button type="submit" class="information__button">Solicitar información</button>
@@ -115,7 +116,7 @@
     <section class="section about" id="about">
       <div class="container us">
         <h1 class="section-title">Acerca de nosotros</h1>
-        <img class="us__img" loading="lazy" src="./assets/img/about/instituto.jpg" alt="Instituto IME">
+        <img class="us__img" loading="lazy" src="./assets/img/instituto.jpg" alt="Instituto IME">
         <p class="us__description">
           El Instituto de Matemática y Estadística (IME) de la Universidad de São Paulo (USP) es uno de los centros académicos más destacados de Brasil en las áreas de matemáticas puras y aplicadas, así como en estadística. Fundado en 1969, el IME se dedica a la enseñanza, investigación y extensión en diversos campos de las matemáticas, con un enfoque en la formación de profesionales altamente capacitados.
           <br><br>
@@ -154,8 +155,12 @@
 
     <section class="graduations" id="graduations">
       <div class="container graduations__content">
-        <h2 class="graduations__tittle">Inscribete a la proxima temporada de grados</h2>
-        <button type="submit" class="graduations__button">Explora</button>
+        <div>
+          <h2 class="graduations__tittle">Inscribete a la proxima temporada de grados</h2>
+        </div>
+        <div>
+          <button type="submit" class="graduations__button">Inscribete</button>
+        </div>
       </div>
     </section>
 
@@ -251,5 +256,6 @@
   </footer>
 
   <script src="./assets/js/header.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
