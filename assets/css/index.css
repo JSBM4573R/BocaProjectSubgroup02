@@ -430,4 +430,11 @@ a:hover {
     flex: none;
   }
 
+  .offers__content {
+    flex-direction: column;
+  }
+
+  .offer {
+    margin-top: 20px;
+  }
 }
