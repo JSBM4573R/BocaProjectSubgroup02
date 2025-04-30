@@ -10,7 +10,7 @@ El **Header** será un espacio limpio y funcional que facilitará la navegación
 
 - **Logo institucional**: Ubicado a la izquierda, brindando identidad y reconocimiento inmediato.
 - **Menú de navegación**: Con un toggle menu accesible que incluirá las siguientes secciones:
-  - Inicio
+    - Inicio
     - Instituto
     - Oferta Académica
     - Admisiones
